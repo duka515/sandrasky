@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DMCA Policy — Sandra Sky</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css?v=1" />
+  <style>
+    .legal { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+    .legal h1 { font-family: "Bebas Neue", sans-serif; font-size: 52px; margin: 12px 0 8px; }
+    .legal h2 { color: #ff2ea8; font-size: 18px; margin: 28px 0 10px; }
+    .legal p, .legal li { color: #c9c4d4; line-height: 1.7; }
+    .legal ul { margin: 12px 0 12px 22px; }
+    .dmca-box { margin-top: 28px; background: #160b22; border: 1px solid rgba(255,46,168,.25); border-radius: 18px; padding: 22px; }
+    .dmca-box label { display: block; font-size: 13px; color: #c9c4d4; margin: 12px 0 6px; }
+    .dmca-box input, .dmca-box textarea { width: 100%; background: #0d0a14; color: #fff; border: 1px solid rgba(255,255,255,.12); border-radius: 10px; padding: 12px 14px; font: inherit; }
+    .dmca-box textarea { min-height: 140px; }
+    .dmca-box button { margin-top: 16px; width: 100%; border: 0; border-radius: 999px; padding: 14px; background: linear-gradient(90deg,#ff4ec8,#ff2ea8); color: #fff; font-weight: 700; cursor: pointer; }
+    .note { font-size: 13px; color: #8d8798; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <main class="legal">
+    <a class="back" href="index.html">← Back</a>
+    <h1>DMCA Policy</h1>
+    <p>sandrasky.site respects the intellectual property rights of others and expects its users to do the same.</p>
+    <h2>Copyright Infringement Notification</h2>
+    <p>If you believe that content available on this website infringes your copyright, please send a written notice with the following information:</p>
+    <ul>
+      <li>A description of the copyrighted work you believe has been infringed.</li>
+      <li>The URL or specific location of the allegedly infringing material.</li>
+      <li>Your contact information, including your name, mailing address, telephone number, and email address.</li>
+      <li>A statement that you have a good-faith belief that the disputed use is not authorized by the copyright owner, its agent, or the law.</li>
+      <li>A statement, made under penalty of perjury, that the information in your notice is accurate and that you are the copyright owner or authorized to act on the copyright owner’s behalf.</li>
+      <li>Your physical or electronic signature.</li>
+    </ul>
+    <h2>Contact</h2>
+    <p>Send DMCA notices with the form below. The contact email is not shown on this page.</p>
+    <div class="dmca-box">
+      <h2>Send a DMCA notice</h2>
+      <form id="dmcaForm">
+        <label for="dmcaName">Your name</label>
+        <input id="dmcaName" required />
+        <label for="dmcaFrom">Your email</label>
+        <input id="dmcaFrom" type="email" required />
+        <label for="dmcaMsg">Notice</label>
+        <textarea id="dmcaMsg" required placeholder="Describe the work, the URL, and your statements."></textarea>
+        <button type="submit">Send notice</button>
+      </form>
+      <p class="note">Your email address is not published on this page.</p>
+    </div>
+    <h2>Counter-Notification</h2>
+    <p>If you believe your content was removed by mistake, you may submit a counter-notification. We may restore removed content when legally permitted.</p>
+    <p>This policy may be updated from time to time.</p>
+  </main>
+  <script>
+    document.getElementById("dmcaForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      var to = atob("bXljb25udGFjdDFAZ21haWwuY29t");
+      var body = "Name: " + document.getElementById("dmcaName").value.trim() + "\nFrom: " + document.getElementById("dmcaFrom").value.trim() + "\n\n" + document.getElementById("dmcaMsg").value.trim();
+      window.location.href = "mailto:" + to + "?subject=" + encodeURIComponent("DMCA notice — sandrasky.site") + "&body=" + encodeURIComponent(body);
+    });
+  </script>
+</body>
+</html>
