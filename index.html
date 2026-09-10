@@ -1,43 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#08060f" />
-  <link rel="manifest" href="manifest.webmanifest" />
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Sandra Sky</title>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=7" />
-  <link rel="stylesheet" href="css/open-app.css?v=7" />
-  <style>
-    .avatar-wrap{overflow:visible}
-    .online{position:absolute;right:16px;bottom:18px;width:22px;height:22px;background:#22c55e;border:4px solid #08060f;border-radius:50%;z-index:5;box-shadow:0 0 0 0 rgba(34,197,94,.75);animation:livePulse 1.2s ease-out infinite}
-    .online::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:3px solid #22c55e;animation:liveRing 1.2s ease-out infinite}
-    @keyframes livePulse{0%{transform:scale(1);box-shadow:0 0 0 0 rgba(34,197,94,.8)}70%{transform:scale(1.12);box-shadow:0 0 0 14px rgba(34,197,94,0)}100%{transform:scale(1);box-shadow:0 0 0 0 rgba(34,197,94,0)}}
-    @keyframes liveRing{0%{transform:scale(.6);opacity:1}100%{transform:scale(1.9);opacity:0}}
-  </style>
+  <link rel="stylesheet" href="css/style.css?v=8" /><link rel="stylesheet" href="css/open-app.css?v=8" />
 </head>
 <body>
-  <div id="fbOverlay" class="fb-overlay" hidden>
-    <a id="openAppBtn" class="open-app-btn" href="#">Are you 18 or older? CLICK HERE TO CONTINUE...</a>
-  </div>
   <main class="page">
     <section class="hero">
       <div class="profile">
-        <div class="avatar-wrap">
-          <img id="avatar" class="avatar" src="assets/avatar.jpeg" alt="Sandra Sky" />
-          <span class="online"></span>
-        </div>
+        <div class="avatar-wrap"><img id="avatar" class="avatar" src="assets/avatar.jpeg" alt="Sandra Sky" /><span class="online"></span></div>
         <div class="identity">
-          <div class="name-row">
-            <h1 id="creatorName">Sandra Sky</h1>
-            <span class="badges"><span id="flag" class="flag">🇺🇸</span><span class="verified"><svg viewBox="0 0 24 24"><path d="M12 2l2.2 2.2 3.1-.4 1 3 2.8 1.5-1.5 2.8 1.5 2.8-2.8 1.5-1 3-3.1-.4L12 22l-2.2-2.2-3.1.4-1-3L2.9 15.7l1.5-2.8L2.9 10.1l2.8-1.5 1-3 3.1.4L12 2zm-1.2 13.3l5.5-5.5-1.4-1.4-4.1 4.1-2-2-1.4 1.4 3.4 3.4z"/></svg></span></span>
-          </div>
-          <p id="tagline" class="tagline">Your favorite creator for exclusive content, live shows & more</p>
-          <div class="stats">
-            <div class="stat"><strong id="videoCount">241</strong><span>VIDEOS</span></div>
-            <div class="stat"><strong id="photoCount">512</strong><span>PHOTOS</span></div>
-          </div>
+          <div class="name-row"><h1 id="creatorName">Sandra Sky</h1><span class="badges"><span id="flag" class="flag">🇺🇸</span><span class="verified"></span></span></div>
+          <p id="tagline" class="tagline">Your favorite creator for exclusive content, live shows &amp; more</p>
+          <div class="stats"><div class="stat"><strong id="videoCount">241</strong><span>VIDEOS</span></div><div class="stat"><strong id="photoCount">512</strong><span>PHOTOS</span></div></div>
         </div>
       </div>
       <div class="ctas">
@@ -46,33 +23,25 @@
       </div>
     </section>
     <section class="gallery-block">
-      <div class="gallery-head">
-        <div class="left"><strong><span id="photoCountLabel">512</span> PHOTOS</strong><span class="updated">updated today</span></div>
-        <a class="view-all js-photos" href="#">VIEW ALL CONTENT ›</a>
-      </div>
+      <div class="gallery-head"><div class="left"><strong><span id="photoCountLabel">512</span> PHOTOS</strong><span class="updated">updated today</span></div><a class="view-all js-photos" href="#">VIEW ALL CONTENT ›</a></div>
       <div class="gallery">
         <a class="shot js-photos" href="#"><img src="assets/g1.jpeg" alt="" /></a>
         <a class="shot js-photos" href="#"><img src="assets/g2.jpeg" alt="" /></a>
         <a class="shot js-photos" href="#"><img src="assets/g3.jpeg" alt="" /></a>
-        <a class="shot locked js-photos" href="#">
-          <img src="assets/g4.jpeg" alt="" />
-          <span class="lock-overlay"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg></span>
-        </a>
+        <a class="shot locked js-photos" href="#"><img src="assets/g4.jpeg" alt="" /><span class="lock-overlay"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/></svg></span></a>
       </div>
     </section>
   </main>
   <footer><a href="dmca.html">DMCA</a><span>© <span id="year">2026</span> <span id="footerName">Sandra Sky</span></span></footer>
-  <div id="funnelOverlay" class="funnel-overlay" hidden style="position:fixed;inset:0;z-index:2147483647;display:none;align-items:center;justify-content:center;padding:16px;background:rgba(0,0,0,.78);">
-    <div class="funnel-card" style="position:relative;width:min(400px,100%);background:#1c1a22;border-radius:18px;padding:26px 18px 18px;text-align:center;">
+  <div id="funnelOverlay" class="funnel-overlay" hidden>
+    <div class="funnel-card">
       <button id="popupClose" class="funnel-x" type="button">×</button>
+      <p class="funnel-kicker" id="popupKicker">Exclusive access</p>
       <h2 id="popupName">Sandra Sky</h2>
-      <p id="popupHeadline">Watch explicit content for FREE in "<span>Jerkmate</span>"</p>
-      <div id="popupSteps" class="funnel-steps"><div>1- Create a FREE Jerkmate Account</div><div>2- Get the Free Lifetime Membership</div><div>3- Enjoy thousands of models like me</div></div>
-      <img id="popupImage" class="funnel-banner" src="assets/popup-photos.gif" alt="" />
-      <span id="popupJoin" class="funnel-btn" role="button">Join for Free</span>
+      <p id="popupHeadline">Create a free account to continue</p>
+      <div id="popupSteps" class="funnel-steps"><div>Create a free account</div><div>Unlock instant access</div><div>Watch private content</div></div>
+      <span id="popupJoin" class="funnel-btn" role="button">Create free account</span>
     </div>
   </div>
-  <script src="js/config.js?v=7"></script>
-  <script src="js/app.js?v=7"></script>
-</body>
-</html>
+  <script src="js/config.js?v=8"></script><script src="js/app.js?v=8"></script>
+</body></html>
