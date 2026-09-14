@@ -1,6 +1,5 @@
-.cta,.funnel-btn{background:linear-gradient(90deg,#ff4ec8,#ff2ea8 50%,#ff6ad5)!important;background-size:200% 200%!important;color:#fff!important;border:0!important;border-radius:999px!important;box-shadow:0 0 0 0 rgba(255,46,168,.7),0 10px 24px rgba(255,46,168,.35);animation:joinPulse 1.6s ease-out infinite,joinShine 3s linear infinite}
-.cta{padding:16px 20px!important}
-.cta-copy strong,.cta-copy small,.cta .arrow{color:#fff!important}
-.funnel-btn{display:block;width:100%;cursor:pointer;padding:16px 18px;font-weight:800;font-size:18px}
-@keyframes joinPulse{0%{box-shadow:0 0 0 0 rgba(255,46,168,.55),0 10px 24px rgba(255,46,168,.35)}70%{box-shadow:0 0 0 16px rgba(255,46,168,0),0 10px 24px rgba(255,46,168,.35)}100%{box-shadow:0 0 0 0 rgba(255,46,168,0),0 10px 24px rgba(255,46,168,.35)}}
-@keyframes joinShine{0%{background-position:0% 50%}100%{background-position:100% 50%}}
+.cta,.funnel-btn{background:linear-gradient(90deg,#ff4ec8,#ff2ea8 50%,#ff6ad5)!important;color:#fff!important;border:0!important;border-radius:999px!important;animation:joinPulse 1.6s ease-out infinite}
+.cta{padding:16px 20px!important}.cta-copy strong,.cta-copy small{display:block;color:#fff!important}
+@keyframes joinPulse{0%{box-shadow:0 0 0 0 rgba(255,46,168,.55)}70%{box-shadow:0 0 0 16px rgba(255,46,168,0)}100%{box-shadow:0 0 0 0 rgba(255,46,168,0)}}
+.avatar,.avatar-wrap img,.gallery,.gallery-block,.shot,.shot img,.funnel-banner,.funnel-card img{display:none!important}
+.avatar-wrap{height:0!important;overflow:hidden!important}
